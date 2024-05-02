@@ -6,7 +6,7 @@
 
     // UI variables
     const form = document.querySelector(".form");
-    const input = document.querySelector("");
+    const input = document.querySelector(".form_input");
     const ul = document.querySelector(".toDoList");
 
 
@@ -19,7 +19,7 @@
         let itemId = String(Date.now());
         let toDoItem = input.value;
 
-        addItemToDom(itemId, toDoItem);
+        addItemToDOM(itemId, toDoItem);
         addItemToArray(itemId, toDoItem);
 
         input.value = "";
